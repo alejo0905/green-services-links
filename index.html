@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Services PTY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(160deg, #0a2e1a 0%, #1a5c30 50%, #0d3d1f 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .logo-wrap {
+      width: 90px;
+      height: 90px;
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      box-shadow: 0 4px 20px rgba(46,204,113,0.4);
+    }
+
+    .logo-wrap svg {
+      width: 50px;
+      height: 50px;
+      fill: white;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .tagline {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.85rem;
+      margin-top: 0.35rem;
+      margin-bottom: 2rem;
+    }
+
+    .divider {
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(90deg, #2ecc71, #27ae60);
+      border-radius: 2px;
+      margin: 0 auto 2rem;
+    }
+
+    .label {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 0.85rem;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 0.95rem 1.25rem;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      margin-bottom: 0.85rem;
+      cursor: pointer;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: scale(0.98); }
+
+    .btn-wa {
+      background: linear-gradient(135deg, #25D366, #1ebe57);
+      color: white;
+      box-shadow: 0 4px 18px rgba(37,211,102,0.35);
+    }
+
+    .btn-wa:hover { box-shadow: 0 6px 24px rgba(37,211,102,0.5); }
+
+    .btn-ig {
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      color: white;
+      box-shadow: 0 4px 18px rgba(131,58,180,0.35);
+    }
+
+    .btn-ig:hover { box-shadow: 0 6px 24px rgba(131,58,180,0.5); }
+
+    .btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+    .separator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0.5rem 0 1.25rem;
+    }
+    .separator span { color: rgba(255,255,255,0.3); font-size: 0.75rem; white-space: nowrap; }
+    .separator::before, .separator::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.15);
+    }
+
+    .wa-buttons { display: flex; flex-direction: column; gap: 0; }
+
+    .footer {
+      margin-top: 2rem;
+      color: rgba(255,255,255,0.3);
+      font-size: 0.72rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="logo-wrap">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 4C20 4 10 14 10 28c0 8 4 15 10 20l-2 8 8-3c2 1 4 1 6 1 14 0 22-10 22-24S46 4 32 4z" opacity="0.3"/>
+        <path d="M20 36c4-8 14-16 26-14-2-10-10-16-20-14-8 2-14 10-14 18 0 4 3 8 8 10z"/>
+        <path d="M44 22c-12-2-22 6-24 16 2 4 6 8 12 8 10 0 18-8 18-18 0-2 0-4-6-6z" opacity="0.7"/>
+        <circle cx="32" cy="48" r="3"/>
+        <rect x="30" y="48" width="4" height="8" rx="2"/>
+      </svg>
+    </div>
+
+    <h1>Green Services PTY</h1>
+    <p class="tagline">Jardinería · Mantenimiento · Paisajismo</p>
+    <div class="divider"></div>
+
+    <p class="label">Contáctanos por WhatsApp</p>
+
+    <div class="wa-buttons">
+      <a class="btn btn-wa" href="https://wa.me/50761413181" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785h-.014a9.735 9.735 0 0 1-4.963-1.36l-.356-.211-3.695.969 .986-3.604-.232-.37a9.742 9.742 0 0 1-1.49-5.203c0-5.383 4.381-9.764 9.768-9.764a9.72 9.72 0 0 1 6.909 2.862 9.72 9.72 0 0 1 2.856 6.91c-.003 5.387-4.384 9.771-9.769 9.771zM12.036 0C5.383 0 0 5.383 0 12.036c0 2.122.557 4.127 1.535 5.865L0 24l6.273-1.647A12.005 12.005 0 0 0 12.036 24C18.689 24 24 18.617 24 11.964 24 5.383 18.617 0 12.036 0z"/>
+        </svg>
+        WhatsApp — 6141-3181
+      </a>
+
+      <div class="separator"><span>o</span></div>
+
+      <a class="btn btn-wa" href="https://wa.me/50768657645" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785h-.014a9.735 9.735 0 0 1-4.963-1.36l-.356-.211-3.695.969 .986-3.604-.232-.37a9.742 9.742 0 0 1-1.49-5.203c0-5.383 4.381-9.764 9.768-9.764a9.72 9.72 0 0 1 6.909 2.862 9.72 9.72 0 0 1 2.856 6.91c-.003 5.387-4.384 9.771-9.769 9.771zM12.036 0C5.383 0 0 5.383 0 12.036c0 2.122.557 4.127 1.535 5.865L0 24l6.273-1.647A12.005 12.005 0 0 0 12.036 24C18.689 24 24 18.617 24 11.964 24 5.383 18.617 0 12.036 0z"/>
+        </svg>
+        WhatsApp — 6865-7645
+      </a>
+    </div>
+
+    <div class="separator" style="margin-top:1.5rem;"><span>también en</span></div>
+
+    <a class="btn btn-ig" href="https://www.instagram.com/greenservicespty" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+      </svg>
+      Instagram — @greenservicespty
+    </a>
+
+    <p class="footer">© 2025 Green Services PTY · Panamá</p>
+  </div>
+</body>
+</html>
